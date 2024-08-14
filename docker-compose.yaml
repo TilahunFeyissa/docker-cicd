@@ -1,0 +1,13 @@
+services:
+  docker-cicd:
+    build: .
+    container_name: docker-cicd_container
+    ports:
+      - '3000:3000'
+    # volumes:
+    #   - ./docker-cicd:/app
+    #   - ./app/node_modules
+
+    stdin_open: true
+    tty: true
+
